@@ -1,80 +1,58 @@
 <!doctype html>
 <html lang="mn">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Санчир — Гарагууд</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Санчир — Гарагууд</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="brand">
-        <div class="logo">Г</div>
-        <div>
-          <div class="site-title">Гарагууд</div>
-          <div class="site-sub">Санчир (Saturn)</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark px-3 py-2">
+  <a class="navbar-brand fw-bold" href="index.html">Гарагууд</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="mainNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Нүүр</a></li>
+      <li class="nav-item"><a class="nav-link" href="delkhii.html">Дэлхий</a></li>
+      <li class="nav-item"><a class="nav-link" href="sugar.html">Сугар</a></li>
+      <li class="nav-item"><a class="nav-link active" href="sanchir.html">Санчир</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container my-5">
+  <div class="row g-4">
+    <div class="col-lg-8">
+      <div class="card planet-card" style="background: url('image/sanchir.jpg') center/cover no-repeat; height: 350px;">
+        <div class="card-overlay">
+          <h2>Санчир</h2>
+          <p class="meta">Аварга гараг, гайхамшигт бүсэлхийтэй</p>
+          <p>Санчир нь хийн аварга гараг бөгөөд хамгийн алдартай онцлог нь гоёмсог бүсэлхий юм. 
+          Энэ бүсэлхий нь мөс, чулууны жижиг хэсгүүдээс бүрддэг.</p>
+          <span class="attr">Диаметр: 116,460 км</span>
+          <span class="attr">Нарнаас зай: 1.4 тэрбум км</span>
+          <span class="attr">Дагуул: 80+</span>
         </div>
       </div>
+    </div>
 
-      <nav class="nav" aria-label="Үндсэн цэс">
-        <a href="index.html">Нүүр</a>
-        <a href="delkhii.html">Дэлхий</a>
-        <a href="sugar.html">Сугар</a>
-        <a href="sanchir.html" class="active">Санчир</a>
-      </nav>
-    </header>
-
-    <main class="main">
-      <section class="left">
-        <div class="card">
-          <div class="hero">
-            <div class="planet" style=" background-image:url('image/sanchir.jpg');
-     background-size:cover;
-     background-position:center;
-     color:white;
-     text-shadow:0 0 6px black;">САНЧИР</div>
-            <div class="info">
-              <h2>Санчир (Saturn)</h2>
-              <div class="meta">Бүсэлхий (сүлжээг) бүхий хий (газ) гараг — томоороо Мягмар (Jupiter)-аас дараа нь.</div>
-            </div>
-          </div>
-
-          <div class="details">
-            <p>Санчирын хамгийн алдартай шинж нь түүний тод бүсэлхий. Бүсэлхий нь мөсөн, чулуулаг, тоосноос тогтоно.</p>
-
-            <div class="list">
-              <div class="attr"><strong>Диаметр</strong><br>≈ 116,460 км</div>
-              <div class="attr"><strong>Эргэлт</strong><br>≈ 10.7 цаг (өндөр хурдтай эргэлт)</div>
-              <div class="attr"><strong>Шинж</strong><br>Рings — мөс, чулуулаг</div>
-              <div class="attr"><strong>Сателлит</strong><br>Их хэмжээний дагуулууд — Титан зэрэг</div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <aside class="right">
-        <div class="card side-figure" style="background:linear-gradient(135deg,#1a2230,#3b2d0b)">
-          <div>
-            <div style="font-size:18px;font-weight:700">Санчирын онцлог</div>
-            <p class="meta" style="margin-top:8px">Бүсэлхийтэй, олон дагуултай</p>
-          </div>
-        </div>
-
-        <div style="height:12px"></div>
-
-        <div class="card">
-          <h4>Сонирхолтой баримт</h4>
-          <p class="meta">Титан бол санчирын хамгийн том дагуул.</p>
-        </div>
-      </aside>
-    </main>
-
-    <footer class="footer">
-      <div> © 2025 Гарагууд</div>
-      <div><a href="index.html" style="color:var(--muted);text-decoration:none">Буцах</a></div>
-    </footer>
+    <aside class="col-lg-4">
+      <div class="card p-3 mb-3" style="background: #334155;">
+        <h5>Сонирхолтой баримт</h5>
+        <p class="meta">Санчирын нягт уснаас бага тул том усанд хийвэл хөвнө.</p>
+      </div>
+    </aside>
   </div>
+</div>
+
+<footer class="text-center text-light py-3">
+  ©2025 Гарагууд — Сургалтын төсөл
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
